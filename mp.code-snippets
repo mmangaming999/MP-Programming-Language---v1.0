@@ -1,0 +1,119 @@
+{
+  "MP if block": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition}) do {",
+      "    $0",
+      "}"
+    ],
+    "description": "MP conditional block"
+  },
+  "MP function": {
+    "prefix": "Make",
+    "body": [
+      "Make ${1:name}(${2:parameter}) do {",
+      "    $0",
+      "}"
+    ],
+    "description": "Define an MP function"
+  },
+  "MP say": {
+    "prefix": "say",
+    "body": "say(\"${1:Hello!}\")",
+    "description": "Print to the terminal"
+  },
+  "MP repeat loop": {
+    "prefix": "for",
+    "body": [
+      "for i (${1:5}) times",
+      "    $0"
+    ],
+    "description": "MP repeat loop (provisional syntax)"
+  },
+  "MP set variable": {
+    "prefix": "set",
+    "body": "set ${1:name} to ${2:0}",
+    "description": "Set a variable"
+  },
+  "MP keyword if": {
+    "prefix": "if",
+    "body": "if",
+    "description": "Conditional keyword"
+  },
+  "MP keyword do": {
+    "prefix": "do",
+    "body": "do",
+    "description": "Begins a code block"
+  },
+  "MP keyword Make": {
+    "prefix": "Make",
+    "body": "Make",
+    "description": "Defines a function"
+  },
+  "MP keyword for": {
+    "prefix": "for",
+    "body": "for",
+    "description": "Starts a loop"
+  },
+  "MP keyword Long": {
+    "prefix": "Long",
+    "body": "Long",
+    "description": "While-style loop"
+  },
+  "MP keyword times": {
+    "prefix": "times",
+    "body": "times",
+    "description": "Loop repetition keyword"
+  },
+  "MP keyword index": {
+    "prefix": "index",
+    "body": "index",
+    "description": "Loop index keyword"
+  },
+  "MP keyword set": {
+    "prefix": "set",
+    "body": "set",
+    "description": "Assign a variable"
+  },
+  "MP keyword to": {
+    "prefix": "to",
+    "body": "to",
+    "description": "Assignment separator"
+  },
+  "MP keyword change": {
+    "prefix": "change",
+    "body": "change",
+    "description": "Modify a variable"
+  },
+  "MP keyword by": {
+    "prefix": "by",
+    "body": "by",
+    "description": "Change amount separator"
+  },
+  "MP keyword say": {
+    "prefix": "say",
+    "body": "say",
+    "description": "Display text or a value"
+  },
+  "MP change variable": {
+    "prefix": "change",
+    "body": "change ${1:name} by ${2:1}",
+    "description": "Change variable by an amount"
+  },
+  "MP Long loop": {
+    "prefix": "Long",
+    "body": [
+      "Long(${1:condition}):",
+      "    $0"
+    ],
+    "description": "Long loop"
+  },
+  "MP indexed loop": {
+    "prefix": "fori",
+    "body": [
+      "for I index (${1:value})",
+      "    $0"
+    ],
+    "description": "Indexed MP loop"
+  }
+}

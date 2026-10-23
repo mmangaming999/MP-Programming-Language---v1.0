@@ -1,0 +1,61 @@
+{
+  "name": "MP Blue Dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1E1E1E",
+    "editor.foreground": "#D4D4D4"
+  },
+  "tokenColors": [
+    {
+      "scope": [
+        "source.mp keyword.control.mp",
+        "source.mp keyword.operator.assignment.mp",
+        "source.mp keyword.declaration.function.mp"
+      ],
+      "settings": {
+        "foreground": "#4FA6FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "source.mp comment.block.mp"
+      ],
+      "settings": {
+        "foreground": "#6A9955"
+      }
+    },
+    {
+      "scope": [
+        "source.mp string.quoted.double.mp"
+      ],
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "scope": [
+        "source.mp constant.numeric.mp"
+      ],
+      "settings": {
+        "foreground": "#B5CEA8"
+      }
+    },
+    {
+      "scope": [
+        "source.mp entity.name.function.mp"
+      ],
+      "settings": {
+        "foreground": "#DCDCAA"
+      }
+    },
+    {
+      "scope": [
+        "source.mp keyword.operator.comparison.mp"
+      ],
+      "settings": {
+        "foreground": "#D4D4D4"
+      }
+    }
+  ]
+}

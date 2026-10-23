@@ -1,0 +1,108 @@
+{
+  "name": "MP",
+  "scopeName": "source.mp",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#functionDefinition"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#operators"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.mp",
+          "begin": "\\^",
+          "end": "\\^"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.mp",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.mp",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "functionDefinition": {
+      "patterns": [
+        {
+          "match": "\\b(Make)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+          "captures": {
+            "1": {
+              "name": "keyword.declaration.function.mp"
+            },
+            "2": {
+              "name": "entity.name.function.mp"
+            }
+          }
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.mp",
+          "match": "\\b(?:if|do|for|Long|times|index)\\b"
+        },
+        {
+          "name": "keyword.operator.assignment.mp",
+          "match": "\\b(?:set|to|change|by)\\b"
+        },
+        {
+          "name": "keyword.declaration.function.mp",
+          "match": "\\bMake\\b"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "entity.name.function.mp",
+          "match": "\\b[A-Za-z_][A-Za-z0-9_]*(?=\\s*\\()"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.mp",
+          "match": "(?<![\\w.])\\-?\\d+(?:\\.\\d+)?\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.comparison.mp",
+          "match": "==|!=|<=|>=|=|<|>"
+        }
+      ]
+    }
+  }
+}

@@ -1,9 +1,19 @@
-# MP Programming Language
+# MP Language v0.2.0
 
-MP is a programming language project with its own syntax, variables, loops, conditions, and custom functions.
+VS Code editing support for **MP** files (`.mp`).
 
-This repository contains the MP Language extension for Visual Studio Code, providing syntax highlighting and autocomplete for `.mp` files.
+## Features
+- Syntax highlighting for MP keywords (`if`, `do`, `Make`, `for`, `Long`, `times`, `index`, `set`, `to`, `change`, `by`), built-in `say()` calls, strings, comments, numbers and function calls.
+- Plain keyword completions and statement snippets. Press **Ctrl+Space** if suggestions are not displayed while typing.
+- Optional **MP Blue Dark** theme that paints MP syntax keywords blue. Enable via **Preferences: Color Theme**. A normal theme may choose different keyword colors.
+- Bracket pairs and auto-indent.
 
-**Created by:** mmangaming999
+## Install
+1. Open VS Code -> Extensions (`Ctrl+Shift+X`).
+2. Click the `...` menu -> **Install from VSIX...** -> choose `mp-language-0.2.0.vsix`.
+3. Create a `.mp` file. Verify the language mode is MP in the status bar.
+4. Press `Ctrl+Shift+P`, search **Preferences: Color Theme**, and choose **MP Blue Dark** to make keywords blue.
+5. Type `d`, `s` or `M` and check suggestions. Press `Ctrl+Space` if needed.
 
-**Development:** The programming language was designed by the project creator. The VS Code extension source code was generated with assistance from OpenAI's ChatGPT.
+## Notes
+This is a **language editor extension**, not an MP interpreter. The theme affects all editors while selected, though its special syntax rules only target MP. Word-based suggestions can also come from VS Code's built-in word completion.

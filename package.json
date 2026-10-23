@@ -1,0 +1,49 @@
+{
+  "name": "mp-language",
+  "displayName": "MP Language",
+  "description": "MP language syntax highlighting, keyword completion and an optional blue keyword color theme.",
+  "version": "0.2.0",
+  "publisher": "mp-community",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mp",
+        "aliases": [
+          "MP",
+          "mp"
+        ],
+        "extensions": [
+          ".mp"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mp",
+        "scopeName": "source.mp",
+        "path": "./syntaxes/mp.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "mp",
+        "path": "./snippets/mp.code-snippets"
+      }
+    ],
+    "themes": [
+      {
+        "label": "MP Blue Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mp-blue-dark-color-theme.json"
+      }
+    ]
+  }
+}
